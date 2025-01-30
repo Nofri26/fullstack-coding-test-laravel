@@ -1,0 +1,1 @@
+<div class="text-xs text-gray-700 mt-2">{{ $slot }}</div>

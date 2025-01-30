@@ -1,0 +1,1 @@
+<div class="max-w-sm rounded-xl overflow-hidden shadow-lg bg-white p-6">    {{$slot}}</div>

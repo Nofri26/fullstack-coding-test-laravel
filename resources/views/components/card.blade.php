@@ -1,0 +1,1 @@
+<div class="max-w-sm rounded-xl overflow-hidden shadow-lg bg-white p-6">    <h2 class="text-xl font-bold text-gray-900">{{ $title }}</h2>    <p class="text-gray-700 mt-2">{{ $content }}</p>    <p class="text-sm text-gray-500 mt-4">Create by <span class="font-semibold">{{ $author }}</span></p></div>
