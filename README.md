@@ -1,66 +1,56 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+## About the Application
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+This application is built using Laravel. The structure follows Laravel general structure (MVC), with an additional pattern for controllers, such as using Requests for form validation. The RESTfull API is implemented using Sanctum. I did not encounter any difficulties during development, but I faced challenges during deployment since I have never deployed a project professionally—only as personal projects.
+The versions used in this project are as follows:
 
-## About Laravel
+- **Laravel**: version `11.38.2`
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Specification
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+The following are the specifications required to run this application:
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- **Composer**: version `2.7.9`
+- **PHP**: version `8.2`
+- **Node.js**: version `v22.12.0`
+- **NPM**: version `10.9.0`
 
-## Learning Laravel
+Ensure all dependencies are installed according to the specifications above before proceeding with the installation.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Installation
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+Follow these steps to install and run the application:
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+1. **Clone repository**  
+   Make sure you have cloned this repository into your local folder using:
+   ```bash
+   git https://github.com/Nofri26/fullstack-coding-test-laravel.git
+   cd fullstack-coding-test-laravel
+   ```
+2. **Install PHP dependencies**  
+   Run the following command to install all required PHP dependencies::
+   ```bash
+    composer install
+   ```
+3. **Install JavaScript dependencies**  
+   Run the following command to install all required Node.js dependencies:
+   ```bash
+    npm install
+   ```
+4. **Setup database**  
+   The application supports SQLite (tested) or MySQL:
+   ```bash
+   cp .env.example .env
+   ```
+5. **Run Migrations and Seeders**  
+   Execute migrations to create database tables:
+   ```bash
+   php artisan migrate --seed
+    ```
+6. **Run the application**  
+   Use the following command to start the local server:
+   ```bash
+   composer run dev
+    ```
 
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Access the application in your browser at http://127.0.0.1:8000/
+Or Live access at https://fullstack-coding-test-laravel-uova-hyvjh5ad9-nofri26s-projects.vercel.app/
